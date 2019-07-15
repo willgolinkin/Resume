@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Student Resume React</title>
+    <!--normalize CSS-->
+    <link rel="stylesheet" href="Normalize_CSS/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <div id="application-root"></div>
+    <!--adds React Developer kit-->
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <!--adds React DOM-specific kit-->
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <!--adds JSX functionality using babel to increase efficiency in creating elements-->
+    <script
+      src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+        function App (props) {
+            return (
+                <header>
+                    {props.children}
+                </header>
+            );
+        }
+
+        ReactDOM.render(
+            <App className='header'>
+                <h1>Will Golinkin Resume</h1>
+
+                <div className="headshot">
+                </div>
+                
+                <p>I'm an aspiring full stack web developer. I love dogs and coding.</p>
+
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                </ul>
+
+                <h2>Contact Info</h2>
+                <ul>
+                    <li id="email"><a href="mailto:will.golinkin@gmail.com" target="_blank"><i className="far fa-envelope"></i><span className="fullSiteName">Email</span></a></li>
+                    <li id="github"><a href="https://github.com/willgolinkin" target="_blank"><i className="fab fa-github-square"></i><span className="fullSiteName">Github</span></a></li>
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/will-golinkin/" target="_blank"><i className="fab fa-linkedin"></i><span className="fullSiteName">LinkedIn</span></a></li>
+                </ul>
+            </App>,
+            document.querySelector('#application-root')
+        );
+    </script>
+</body>
+</html>
+
+
+                
+
+                
