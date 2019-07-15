@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+#headshot {
+    /*why can't I get local image to load?
+    background-image: url("Img Assets\\Golinkin Resume Headshot 20180109.jpg");*/
+    background-image: url("http://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg")
+}
+  

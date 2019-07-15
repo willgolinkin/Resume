@@ -40,25 +40,54 @@
             <App className='header'>
                 <h1>Will Golinkin Resume</h1>
 
-                <div className="headshot">
+                <div id="headshot">
+                    <img src="Img Assets\\Golinkin Resume Headshot 20180109.jpg" alt="Will Golinkin"/>
                 </div>
                 
-                <p>I'm an aspiring full stack web developer. I love dogs and coding.</p>
+                <p>I'm an aspiring full stack web developer. I love my husky puppy and coding.</p>
 
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                </ul>
+                <address>
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li>Sally Student</li>
+                        <li> <a href="mailto:will.golinkin@gmail.com?subject=Introduction" target="_blank">will.golinkin@gmail.com</a></li>
+                        <li>(713)201-4108</li>
+                        <li id="github"><a href="https://github.com/willgolinkin" target="_blank"><i className="fab fa-github-square"></i><span className="fullSiteName">Github</span></a></li>
+                        <li id="linkedin"><a href="https://www.linkedin.com/in/will-golinkin/" target="_blank"><i className="fab fa-linkedin"></i><span className="fullSiteName">LinkedIn</span></a></li>
+                    </ul>
+                </address>
+                
+                <div>
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Stanford University, MBA/MPP Candidate, Expected 2021</li>
+                        <li>Dickinson College, B.A. International Business, B.A. Spanish, Class of 2013</li>
+                    </ul> 
+                </div>
 
-                <h2>Contact Info</h2>
-                <ul>
-                    <li id="email"><a href="mailto:will.golinkin@gmail.com" target="_blank"><i className="far fa-envelope"></i><span className="fullSiteName">Email</span></a></li>
-                    <li id="github"><a href="https://github.com/willgolinkin" target="_blank"><i className="fab fa-github-square"></i><span className="fullSiteName">Github</span></a></li>
-                    <li id="linkedin"><a href="https://www.linkedin.com/in/will-golinkin/" target="_blank"><i className="fab fa-linkedin"></i><span className="fullSiteName">LinkedIn</span></a></li>
-                </ul>
+                <div>
+                    <h2>Employment History</h2>
+                    <ul>
+                        <li>
+                            <h3>Analyst, J.P. Morgan Private Bank, 2013-2014</h3>
+                            <p>Performed extensive porftolio analysis on a book of over 200 clients with $1bn in assets under management</p>
+                        </li>
+                        <li>
+                            <h3>United States Marine Corps, 2014-2018</h3>
+                            <p>Served as Platoon Commander for 70 Marines over the course of two years and one deployment</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                    </ul>
+                </div>
             </App>,
             document.querySelector('#application-root')
         );
